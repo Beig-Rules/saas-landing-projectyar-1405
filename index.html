@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پروژه‌یار — مدیریت پروژه فارسی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4F4F2;
+      --surface: #FFFFFF;
+      --inverse: #0A0A0A;
+      --text: #0A0A0A;
+      --muted: #6B6B6B;
+      --on-inverse: #F4F4F2;
+      --stroke: #E2E2E0;
+      --font: "Vazirmatn", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    header { padding: 24px 0; border-bottom: 1px solid var(--stroke); background: var(--surface); }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 1.4rem; letter-spacing: -0.02em; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text); font-weight: 500; }
+    .btn { display: inline-block; padding: 12px 28px; background: var(--inverse); color: var(--on-inverse); text-decoration: none; font-weight: 600; border-radius: 4px; }
+    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--stroke); }
+    .hero { padding: 96px 0 72px; text-align: center; }
+    .hero h1 { font-size: 3.2rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 20px; }
+    .hero p { font-size: 1.25rem; color: var(--muted); max-width: 620px; margin: 0 auto 36px; }
+    .hero-actions { display: flex; gap: 16px; justify-content: center; }
+    section { padding: 80px 0; }
+    h2 { font-size: 2.2rem; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.02em; }
+    .section-sub { color: var(--muted); margin-bottom: 48px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+    .feature { background: var(--surface); padding: 32px; border: 1px solid var(--stroke); }
+    .feature h3 { margin-bottom: 12px; font-size: 1.2rem; }
+    .kpi { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .kpi-card { background: var(--inverse); color: var(--on-inverse); padding: 32px; text-align: center; }
+    .kpi-card .num { font-size: 2.4rem; font-weight: 700; font-family: "Outfit", sans-serif; }
+    footer { background: var(--inverse); color: var(--on-inverse); padding: 48px 0; text-align: center; }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .nav-links { display: none; }
+      .kpi { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">پروژه‌یار</div>
+        <ul class="nav-links">
+          <li><a href="#features">ویژگی‌ها</a></li>
+          <li><a href="#pricing">قیمت</a></li>
+          <li><a href="#contact">تماس</a></li>
+        </ul>
+        <a href="#start" class="btn">شروع رایگان</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>مدیریت پروژه ساده و قدرتمند برای تیم‌های فارسی</h1>
+      <p>پروژه‌یار به شما کمک می‌کند وظایف، زمان‌بندی و همکاری تیم را بدون پیچیدگی مدیریت کنید. طراحی شده برای زبان فارسی و فرهنگ کار ایرانی.</p>
+      <div class="hero-actions">
+        <a href="#start" class="btn">شروع رایگان ۱۴ روزه</a>
+        <a href="#demo" class="btn btn-outline">مشاهده دمو</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <h2>ویژگی‌های اصلی</h2>
+      <p class="section-sub">همه چیزی که برای اجرای پروژه‌های موفق نیاز دارید</p>
+      <div class="features">
+        <div class="feature">
+          <h3>تاسک‌های واضح</h3>
+          <p>تعریف وظایف، اولویت‌بندی و تخصیص به اعضای تیم با واجه کاملاً فارسی.</p>
+        </div>
+        <div class="feature">
+          <h3>تایم‌لاین پروژه</h3>
+          <p>نمایش بصری پیشرفت و ضرب‌الاجل‌ها بدون نیاز به ابزارهای خارجی.</p>
+        </div>
+        <div class="feature">
+          <h3>گزارش ساده</h3>
+          <p>خروجی گزارش پیشرفت و زمان صرف‌شده برای ارائه به مدیریت.</p>
+        </div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-card"><div class="num">۱۲۰۰+</div><div>تیم فعال</div></div>
+        <div class="kpi-card"><div class="num">۹۸٪</div><div>رضایت کاربر</div></div>
+        <div class="kpi-card"><div class="num">۳×</div><div>سرعت بیشتر</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" style="background: var(--surface);">
+    <div class="container">
+      <h2>قیمت‌گذاری شفاف</h2>
+      <p class="section-sub">پلن‌های مناسب برای تیم‌های کوچک تا سازمان‌های بزرگ</p>
+      <div class="features">
+        <div class="feature">
+          <h3>استارتاپ</h3>
+          <p style="font-size: 1.8rem; font-weight: 700; margin: 12px 0;">رایگان</p>
+          <p>تا ۵ کاربر، پروژه‌های نامحدود</p>
+        </div>
+        <div class="feature" style="border-color: var(--inverse);">
+          <h3>حرفه‌ای</h3>
+          <p style="font-size: 1.8rem; font-weight: 700; margin: 12px 0;">۴۹۰ هزار تومان/ماه</p>
+          <p>کاربر نامحدود، پشتیبانی اولویت‌دار</p>
+        </div>
+        <div class="feature">
+          <h3>سازمانی</h3>
+          <p style="font-size: 1.8rem; font-weight: 700; margin: 12px 0;">تماس بگیرید</p>
+          <p>امنیت پیشرفته، یکپارچه‌سازی کامل</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="start">
+    <div class="container" style="text-align: center;">
+      <h2>آماده شروع هستید؟</h2>
+      <p class="section-sub">هیچ کارت اعتباری نیاز نیست. امروز تیم خود را سازمان‌دهی کنید.</p>
+      <a href="mailto:hello@projectyar.example" class="btn">ثبت‌نام رایگان</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© ۱۴۰۵ پروژه‌یار. طراحی شده برای تیم‌های ایرانی.</p>
+    </div>
+  </footer>
+</body>
+</html>
